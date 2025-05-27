@@ -8,7 +8,7 @@ I’m a graduate student in Data Science at Vanderbilt University, with a founda
 
 My work spans NLP, cloud computing, predictive modeling, and data infrastructure — with hands-on experience using tools like Python, AWS, SQL, and PySpark to solve real-world problems. I've collaborated on projects ranging from customer simulation systems and job-matching platforms to quantum simulations and public policy research.
 
-I'm especially interested in roles and collaborations that involve data strategy, model development, and scalable analytics in domains like tech, research, or product development.
+I'm especially interested in roles and collaborations that involve data strategy, model development, and scalable analytics in domains like tech, automotive, consulting, and fintech.
 
 ## Repository Overview
 
