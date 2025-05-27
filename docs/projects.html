@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Susheel Srikanth</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-projects.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="index.html">Susheel Srikanth</a></div>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Featured Projects</h1>
+        <p class="hero-subtitle">
+          A showcase of data science and machine learning projects spanning financial technology, healthcare AI, multi-agent systems, and large-scale data processing.
+        </p>
+        <div class="project-stats">
+          <div class="stat-item">
+            <span class="stat-number">7</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Categories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="nlp">NLP & LLMs</button>
+        <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+        <button class="filter-btn" data-filter="big-data">Big Data</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare AI</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+        
+        <!-- FinNews-LLM Project -->
+        <div class="project-card" data-category="nlp">
+          <div class="project-image fintech-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/FrostNT1/FinNews-LLM" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>FinNews-LLM: Stock Prediction</h3>
+              <div class="project-category">Financial NLP</div>
+            </div>
+            <p class="project-description">
+              Advanced stock return prediction using large language models (BERT, MISTRAL, LLAMA3) to analyze 120K+ financial news articles across 508 S&P 500 companies.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">120K+ news articles analyzed</div>
+              <div class="highlight-item">508 S&P 500 companies covered</div>
+              <div class="highlight-item">Multi-horizon prediction (1, 5, 10 days)</div>
+              <div class="highlight-item">Team collaboration project</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">BERT</span>
+              <span class="tech-tag">LLAMA3</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Financial Data</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amazon Sentiment Analysis -->
+        <div class="project-card" data-category="big-data nlp">
+          <div class="project-image bigdata-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Susheel1101/amazon_sentiment-" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Amazon Sentiment Analysis at Scale</h3>
+              <div class="project-category">Big Data & NLP</div>
+            </div>
+            <p class="project-description">
+              Large-scale sentiment analysis of 18M+ Amazon product reviews using PySpark on Google Cloud Platform, achieving 87% F1 score with advanced feature engineering.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">18M+ reviews processed</div>
+              <div class="highlight-item">87% F1 score achieved</div>
+              <div class="highlight-item">6 product categories</div>
+              <div class="highlight-item">Advanced feature engineering</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">PySpark</span>
+              <span class="tech-tag">Google Cloud</span>
+              <span class="tech-tag">TF-IDF</span>
+              <span class="tech-tag">Word2Vec</span>
+              <span class="tech-tag">Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Job Matching Platform -->
+        <div class="project-card" data-category="nlp">
+          <div class="project-image ai-systems-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sankhya-S/wayfinder-project-group12" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AI Job Matching Platform</h3>
+              <div class="project-category">Multi-Agent Systems</div>
+            </div>
+            <p class="project-description">
+              Sophisticated job matching system combining RAG, multi-agent orchestration, and semantic search. Features CrewAI framework and full AWS deployment.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">Multi-agent architecture</div>
+              <div class="highlight-item">RAG implementation</div>
+              <div class="highlight-item">AWS production deployment</div>
+              <div class="highlight-item">Langfuse observability</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">CrewAI</span>
+              <span class="tech-tag">FAISS</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diabetic Retinopathy Detection -->
+        <div class="project-card" data-category="healthcare computer-vision">
+          <div class="project-image healthcare-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sankhya-S/Diabetic-Retinopathy-Detection-in-Fundus-Images" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Diabetic Retinopathy Detection</h3>
+              <div class="project-category">Healthcare AI</div>
+            </div>
+            <p class="project-description">
+              Deep learning models for automated diabetic retinopathy severity classification from retinal images, comparing EfficientNet and ResNet architectures on 35K+ medical images.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">35K+ retinal images</div>
+              <div class="highlight-item">5-class severity detection</div>
+              <div class="highlight-item">Model comparison study</div>
+              <div class="highlight-item">Medical impact application</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">EfficientNet</span>
+              <span class="tech-tag">ResNet</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Medical Imaging</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Learning Assistant -->
+        <div class="project-card" data-category="research">
+          <div class="project-image education-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Susheel1101/AI_Learning_Assistant" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AI Learning Assistant</h3>
+              <div class="project-category">Educational Tech</div>
+            </div>
+            <p class="project-description">
+              Interactive learning platform leveraging Claude's computer use capabilities for personalized computer skills education across multiple applications.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">Multi-application support</div>
+              <div class="highlight-item">Real-time demonstrations</div>
+              <div class="highlight-item">Interactive learning</div>
+              <div class="highlight-item">Streamlit interface</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Claude AI</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Education Tech</span>
+              <span class="tech-tag">System Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI for Science Communication -->
+        <div class="project-card" data-category="research nlp">
+          <div class="project-image research-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <span class="project-link disabled">
+                  <span>Private Repository</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AI for Science Communication</h3>
+              <div class="project-category">Research Collaboration</div>
+            </div>
+            <p class="project-description">
+              Research project developing AI-powered plain language summaries of scientific papers, making complex research accessible to diverse audiences with appropriate readability levels.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">Social impact focus</div>
+              <div class="highlight-item">Readability optimization</div>
+              <div class="highlight-item">Academic collaboration</div>
+              <div class="highlight-item">Public science literacy</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">GPT-4</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Research</span>
+              <span class="tech-tag">Science Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SeeClick Analysis -->
+        <div class="project-card" data-category="research computer-vision">
+          <div class="project-image vision-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Susheel1101/Seeclick_transformer" target="_blank" class="project-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>SeeClick: GUI Agents Analysis</h3>
+              <div class="project-category">Vision-Language Research</div>
+            </div>
+            <p class="project-description">
+              Research analysis and implementation of SeeClick paper for Transformers class, exploring GUI grounding capabilities for visual agents and automated interface interaction.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">Academic paper analysis</div>
+              <div class="highlight-item">GUI automation research</div>
+              <div class="highlight-item">Demo implementation</div>
+              <div class="highlight-item">Vision-language models</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">GUI Automation</span>
+              <span class="tech-tag">Research Analysis</span>
+              <span class="tech-tag">Academic Project</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="technologies-section">
+    <div class="container">
+      <h2 class="section-title">Technologies & Tools</h2>
+      <div class="tech-categories">
+        <div class="tech-category">
+          <h3>Languages & Frameworks</h3>
+          <div class="tech-items">
+            <span class="tech-item">Python</span>
+            <span class="tech-item">PySpark</span>
+            <span class="tech-item">R</span>
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">Flask</span>
+            <span class="tech-item">Streamlit</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3>Machine Learning & AI</h3>
+          <div class="tech-items">
+            <span class="tech-item">PyTorch</span>
+            <span class="tech-item">TensorFlow</span>
+            <span class="tech-item">Scikit-learn</span>
+            <span class="tech-item">OpenCV</span>
+            <span class="tech-item">BERT</span>
+            <span class="tech-item">LLaMA</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3>Cloud & Infrastructure</h3>
+          <div class="tech-items">
+            <span class="tech-item">AWS</span>
+            <span class="tech-item">Google Cloud</span>
+            <span class="tech-item">Docker</span>
+            <span class="tech-item">EC2</span>
+            <span class="tech-item">S3</span>
+            <span class="tech-item">FAISS</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3>Specialized Tools</h3>
+          <div class="tech-items">
+            <span class="tech-item">CrewAI</span>
+            <span class="tech-item">LangChain</span>
+            <span class="tech-item">Langfuse</span>
+            <span class="tech-item">Word2Vec</span>
+            <span class="tech-item">TF-IDF</span>
+            <span class="tech-item">RAG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Interested in Collaboration?</h2>
+        <p>I'm always excited to work on challenging data science problems and innovative AI applications. Let's build something impactful together.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          <a href="https://github.com/Susheel1101" target="_blank" class="btn btn-secondary">View GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <h4>Susheel Srikanth</h4>
+          <p>Data Scientist</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h5>Connect</h5>
+            <a href="https://github.com/Susheel1101" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/susheelsrikanth" target="_blank">LinkedIn</a>
+            <a href="mailto:susheel.srikanth@vanderbilt.edu">Email</a>
+          </div>
+          <div class="footer-section">
+            <h5>Explore</h5>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Experience</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Susheel Srikanth • Passionate about data-driven solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filter cards
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category').split(' ');
+            
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // Initial animation
+      projectCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+    });
+  </script>
+
+</body>
+</html>
