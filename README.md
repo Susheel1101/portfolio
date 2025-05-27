@@ -24,7 +24,7 @@ This repo includes:
 ## Built With
 
 - HTML5  
-- CSS3 (hand-coded)  
+- CSS3 
 - JavaScript  
 
 No external CSS frameworks or templates — the design and structure are written from scratch.
