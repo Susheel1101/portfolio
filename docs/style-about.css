@@ -303,6 +303,69 @@ html, body {
   line-height: 1.5;
 }
 
+/* Beyond the Data Section */
+.beyond-section {
+  padding: 6rem 0;
+  background: #fafaf9;
+}
+
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0 2.5rem;
+}
+
+.beyond-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.8rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beyond-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.beyond-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.beyond-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+}
+
+.beyond-card p {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.beyond-note {
+  background: white;
+  border-left: 3px solid #2563eb;
+  border-radius: 0 12px 12px 0;
+  padding: 1.8rem 2rem;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+
+.beyond-note p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
 /* Education Section */
 .education-section {
   padding: 6rem 0;
@@ -686,6 +749,10 @@ html, body {
   
   .hero-stats {
     justify-content: center;
+  }
+
+  .beyond-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .story-content {
